@@ -12,20 +12,20 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-linear-to-l from-blue-200 to-green-300 flex items-center h-screen justify-center">
+<body class="bg-linear-to-l from-blue-200 to-green-300 flex items-center h-screen justify-center max-sm:flex max-sm:items-center">
 
     <!-- parent principal -->
-    <div class="w-[30%] h-[80vh] bg-white rounded-xl animate-transform" id="principal">
+    <div class="w-[30%] h-[80vh] bg-white rounded-xl animate-transform max-sm:w-[90%] max-sm:h-[80vh]" id="principal">
 
         <div class="w-full bg-green-300/30 h-[4vh] flex">
             <!-- trois petit rond a gauche -->
-            <div class="inline-flex gap-2 h-full w-[15%] items-center justify-start flex-1 pl-2">
+            <div class="inline-flex gap-2 h-full w-[15%] items-center justify-start flex-1 pl-2 max-sm:hidden">
                 <div class="w-4 h-4 rounded-full bg-amber-600"></div>
                 <div class="w-4 h-4 rounded-full bg-orange-300"></div>
                 <div class="w-4 h-4 rounded-full bg-green-600"></div>
             </div>
             <!-- text calculator au centre -->
-            <h1 class=" text-2xl text-gray-500/50 flex-2  pl-8 max-sm:text-xl">Calculator</h1>
+            <h1 class=" text-2xl text-gray-500/50 flex-2  pl-8 max-sm:text-xl max-sm:pr-4 max-sm:text-center">Calculator</h1>
         </div>
         <!-- ecran d'affichage de la calculatrice -->
         <textarea type="text" class="w-full h-[10vh] border border-white text-gray-500/70 text-right pr-4 pt-8" id="affichage" disabled></textarea>
