@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+button{
+    transition:background-color 1s 0s ;
+}
+
+button:active{
+    background-color:rgba(95, 207, 95, 0.623);
+    color: white;
+}
+
+#principal {
+    animation:transform 2s ease-in-out 0s;
+}
+
+
+    @keyframes transform {
+        0%{opacity:0.1;
+        transform:scale(0.5);}
+        /* 50%{opacity:0.1;
+         transform:scale(0.9);} */
+        100%{opacity:1;
+        transform:scale(1);}
+        
+    }
+
+    #nom{
+        font-size: 1.5rem;
+        color: white;
+        animation:multicouleur 2s ease-in-out 0s infinite  ;
+    }
+
+    @keyframes multicouleur {
+         0%{background: linear-gradient(to right,greenyellow,red,blue);
+       -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+            50%{background: linear-gradient(to right,rgb(255, 47, 47),rgb(0, 81, 255),rgb(65, 240, 42));
+       -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+          100%{background: linear-gradient(to right,rgb(0, 81, 255),rgb(255, 47, 47),rgb(65, 240, 42));
+       -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+                   }
+}
+    
